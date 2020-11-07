@@ -5,13 +5,13 @@ import platform
 
 def main():
 	print("*"*15+" System Information "+"*"*15)
-	print("Operating System: "+platform.uname()[0])
-	print("Computer Network Name: "+platform.uname()[1])
-	print("Operating System Release: "+platform.uname()[2])
-	print("Operating System Version: "+platform.uname()[3])
-	print("Machine Type: "+platform.uname()[4])
-	print("Processor: "+platform.uname()[5])
-	print("Architecture: "+str(platform.architecture()))
+	print(f"Operating System: {platform.uname()[0]}")
+	print(f"Computer Network Name: {platform.uname()[1]}")
+	print(f"Operating System Release: {platform.uname()[2]}")
+	print(f"Operating System Version: {platform.uname()[3]}")
+	print(f"Machine Type: {platform.uname()[4]}")
+	print(f"Processor: {platform.uname()[5]}")
+	print(f"Architecture: {str(platform.architecture())}")
 
 	print("*"*15+" CPU Information "+"*"*15)
 	print(f"Number of physical CPU cores: {psutil.cpu_count(logical=False)}")
