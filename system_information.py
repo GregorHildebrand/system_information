@@ -11,6 +11,7 @@ print("Operating System Version: "+platform.uname()[3])
 print("Machine Type: "+platform.uname()[4])
 print("Processor: "+platform.uname()[5])
 print("Architecture: "+str(platform.architecture()))
+
 print("*"*15+" CPU Information "+"*"*15)
 print(f"Number of physical cpu-cores: {psutil.cpu_count(logical=False)}")
 print(f"Number of logical cpu-cores: {psutil.cpu_count(logical=True)}")
