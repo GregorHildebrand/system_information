@@ -1,4 +1,4 @@
--> This small python-script shows you some information about your system.
+-> This python-script shows you some information about your system.
 
 -> If Python is installed on your Windows operating system you can execute the python script by clicking/double-clicking it, and alternatively you can execute the batch-script "run_sysinfo.bat" via commandline or by clicking/double-clicking it.
 
