@@ -4,8 +4,8 @@
 
 Requirements:
 
--> Python (2.x.x or 3.x.x): Please visit https://www.python.org/downloads/
-
+-> Python 2.x.x: Please visit https://www.python.org/downloads/
+(Does not run with Python 3.x.x)
 
 
 DISCLAIMER - USE AT YOUR OWN RISK
