@@ -61,8 +61,7 @@ class Print_RAMInfo(tk.Toplevel):
 
 def print_DiskInfo():
 	for i in range(len(psutil.disk_partitions())):
-		print(f"Disk partition {i}: Device: {psutil.disk_partitions()[i].device}, Mountpoint: {psutil.disk_partitions()[i].mountpoint},"
-			  f" Filesystem: {psutil.disk_partitions()[i].fstype}, Options: {psutil.disk_partitions()[i].opts}")
+		print(f"Disk partition {i}: Device: {psutil.disk_partitions()[i].device}, Mountpoint: {psutil.disk_partitions()[i].mountpoint}, Filesystem: {psutil.disk_partitions()[i].fstype}, Options: {psutil.disk_partitions()[i].opts}")
 		print(f"Disk partition {i} Total Usage: {psutil.disk_usage(psutil.disk_partitions()[i].device).total/(1024*1024*1024):.6} GB")
 		print(f"Disk partition {i} Current Usage: {psutil.disk_usage(psutil.disk_partitions()[i].device).used/(1024*1024*1024):.6} GB")
 		print(f"Disk partition {i} Remaining Usage: {psutil.disk_usage(psutil.disk_partitions()[i].device).free/(1024*1024* 1024):.6} GB")
